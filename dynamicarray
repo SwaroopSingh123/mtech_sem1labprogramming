@@ -1,0 +1,35 @@
+#include <iostream>
+
+ using namespace std;
+
+ template <class T>
+
+ class ArrayList
+ {
+ public:
+ 
+     T* pttr;
+     int noele=0;
+     int size=0;
+
+     void insertElement()
+     {
+         int num;
+         cout << "Enter a value to be inserted: ";
+         cin >> num;
+
+         if(noele<size){
+             array[noele]=num;
+         }
+
+         else{
+             if(size==0){
+                 size=1;
+             }
+             else{
+                 size=size*2;
+             }
+
+             T* tempArr=new T(size);
+      }
+ }
